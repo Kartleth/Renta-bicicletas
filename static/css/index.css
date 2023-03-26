@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+img{
+    width: 100%;
+    object-fit: cover;
+}
+/* Contenedor */
+.contenedor{
+    background-color: rgb(245, 245, 245);
+    padding-bottom: 40px;    
+}
+/* Header -Menu */
+.header{
+    padding-top: 10px;
+    width: 90%;
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* Logo */
+.logo{
+    font-weight: 900;
+    font-size: 20px;
+}
+.logo span{
+    color: #4481eb;
+}
+.bicicleta{
+    width: 30px;
+}
+@media (min-width:768px) {
+    .bicicleta{
+        display: none;
+    }
+}
+.bicicleta:hover{
+    cursor: pointer;
+}
+/* Navegacion */
+.menu{
+    display: none;
+}
+@media (min-width:768px) {
+    .menu{
+        display: flex;
+    }
+}
+.navegacion{
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+    list-style: none;
+}
+@media (min-width:768px) {
+    .navegacion{
+        gap: 30px;
+    }
+}
+@media (min-width:992px) {
+    .navegacion{
+        gap: 50px;
+    }
+}
+.navegacion a{
+    text-decoration: none;
+    color: rgb(97, 97, 97);
+    font-weight: 400;
+    font-size: 15px;
+}
+.navegacion a:hover{
+    color: black;
+}
+.navegacion li:last-child{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.navegacion li:last-child a{
+   font-weight: 700; 
+}
+.navegacion li:last-child a:last-child{
+    background-color: #4481eb;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid #4481eb;
+}
+.navegacion li:last-child a:last-child:hover{
+    background-color: white;
+    color: #4481eb;
+}
+/* Información Banner */
+.presentacion{
+    width: 90%;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+@media (min-width:768px) {
+    .presentacion{
+        flex-direction: row;
+    }
+}
+/* Información */
+.informacion{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+@media (min-width:768px) {
+    .informacion{
+        text-align: start;
+        align-items: flex-start;
+    }
+}
+.informacion--boton button{
+    padding: 10px;
+    background-color: #4481eb;
+    border: 1px solid #4481eb;
+    color: white;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 15px;
+}
+.informacion--boton button:hover{
+    background-color: white;
+    color: #4481eb;
+    cursor: pointer;
+}
+/* Información imagen */
+.presentacion--imagen{
+    margin-top: 30px;
+    max-width: 300px;
+    filter: drop-shadow(0 1mm 6mm rgba(108, 99, 255, 0.467));
+}
+@media (min-width:456px) {
+    .presentacion--imagen{
+        max-width: 500px;
+    }
+}
+@media (min-width:1024px) {
+    .presentacion--imagen{
+        max-width: 800px;
+    }
+}
+/* Seccion platos */
+.transporte{
+    width: 90%;
+    margin-inline:auto;
+}
+.transportes{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 85px;
+}
+@media (min-width:768px) {
+    .transportes{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (min-width:992px) {
+    .transportes{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+.transporte--titulo{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 85px;
+}
+@media (min-width:768px) {
+    .transporte--titulo{
+        text-align: start;
+    }
+}
+/* Contenedor de tarjetas */
+.bici{
+    width: 80%;
+    margin-inline:auto;
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid rgba(196, 196, 196, 0.426);
+}
+.bici img{
+    width: 150px;
+    filter: drop-shadow(0 0 0.9rem #4481eb);
+    margin-top: -85px;
+}
+.bici p{
+    font-size: 15px;
+    color: rgb(63, 63, 63);
+}
+.bici--info{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: space-between;
+}
+.bici--info p{
+    font-weight: 900;
+}
+.bici--info button{
+    background-color: #4481eb;
+    color: white;
+    font-weight: 900;
+    padding: 5px 12px;
+    border-radius: 50%;
+    font-size: 25px;
+}
+.bici--info button:hover{
+    cursor: pointer;
+}

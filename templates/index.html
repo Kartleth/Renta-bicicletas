@@ -5,48 +5,99 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/static/css/normalize.css">
+    <link rel="stylesheet" href="../static/css/index.css">
 </head>
 <body>
     <div class="contenedor">
         <header class="header">
             <div class="logo">
-                <p>BIK<span>FAST</span></p>
+                <p>BIKE<span>FAST</span></p>
             </div>
-
             <div class="bicicleta">
-                <img src="/static/imagenes/bicicletaFondo.png" alt="Menu bicicleta">
+                <img src="/static/imagenes/menu.png" alt="Menu bicicletas">
             </div>
             <nav class="menu">
-                <ul>
+                <ul class="navegacion">
                     <li><a href="#">Inicio</a></li>
                     <li><a href="#">Menu</a></li>
                     <li><a href="#">Servicios</a></li>
                     <li><a href="#">Nosotros</a></li>
                     <li><a href="#">Galeria</a></li>
-                    <li><a href="#">Iniciar sesion</a><a href="#">Registrar</a></li>
+                    <li><a href="#">Iniciar Session</a><a href="#">Registrar</a></li>
                 </ul>
             </nav>
         </header>
-
         <aside class="presentacion">
             <div class="informacion">
-                <h1>Renta la bicicleta acomodad a tus necesidades</h1>
+                <h1>¡No te quedes atras y ven a BikeFast!</h1>
                 <div>
-                    <p>Encuentra la comodidad y la facilidad de traslado con nuestros servicios.</p>
-                    <p>Porque siempre pensamos en ti y felicidad.</p>
+                    <p>Renta las mejores bicicletas.</p>
+                    <p>Trasladate con la mejor seguridad y los mejores precios:</p>
+                    <p>Unicamente en BikeFast.</p>
+                    <p>Ubicados en plaza Galerias Mall. Hermosillo, Sonora.</p>
                 </div>
-
                 <div class="informacion--boton">
-                    <button type="button">Rentar bicicleta</button>
-                </div>
-
-                <div class="presentacion--imagen">
-                    <img src="" alt="Imagen presentacion">
+                    <button type="button">Rentar producto</button>
                 </div>
             </div>
+            <div class="presentacion--imagen">
+                <img src="/static/imagenes/undraw_ride_a_bicycle_re_6tjy.svg" alt="Imagen presentacion">
+            </div>
         </aside>
+        <main class="transporte">
+            <h2 class="transporte--titulo">Productos disponibles</h2>
 
-        
+           
+            <div class="transportes">
+                <article class="bici">
+                    <img src="/static/imagenes/bicicleta.png" alt="Bicicleta normal">
+                    <h1>Bicicleta normal</h1>
+                    <p>Vehículo de dos ruedas movido por una persona, provisto de un manubrio en la parte delantera, un asiento para el conductor y dos pedales.</p>
+                    <div class="bici--info">
+                        <p>$100/Hora</p>
+                        <button type="button">+</button>
+                    </div>                    
+                </article>
+                <article class="bici">
+                    <img src="/static/imagenes/bicicleta-electrica.png" alt="Bicicleta electrica">
+                    <h1>Bicicleta eléctrica</h1>
+                    <p>Bicicleta a la que se le acopla un motor eléctrico para ayudar en el avance de la misma.</p>
+                    <div class="bici--info">
+                        <p>$160/Hora</p>
+                        <button type="button">+</button>
+                    </div>                    
+                </article>
+                <article class="bici">
+                    <img src="/static/imagenes/triciclo.png" alt="Papas fritas">
+                    <h1>Triciclo</h1>
+                    <p>El triciclo es un vehículo de tres ruedas, muy similar a una bicicleta utilizado solo para niños.</p>
+                    <div class="bici--info">
+                        <p>$70/Hora</p>
+                        <button type="button">+</button>
+                    </div>                    
+                </article>
+                <article class="bici">
+                    <img src="/static/imagenes/scooter.png" alt="Scotter">
+                    <h1>Scotter</h1>
+                    <p>plataforma alargada sobre dos ruedas en línea y una barra de dirección, con la que se deslizan los patinadores tras impulsarse con un pie contra el suelo.</p>
+                    <div class="bici--info">
+                        <p>$90/Hora</p>
+                        <button type="button">+</button>
+                    </div>                    
+                </article>
+
+                <article class="bici">
+                    <img src="/static/imagenes/electric-scooter .png" alt="Scotter electrico">
+                    <h1>Scotter eléctrico</h1>
+                    <p>Un Scooter eléctrico es un vehículo individual que cuenta con dos ruedas, un patín al que subir, y un manillar con el que controlar el vehículo.</p>
+                    <div class="bici--info">
+                        <p>$190/Hora</p>
+                        <button type="button">+</button>
+                    </div>                    
+                </article>
+            </div>
+        </main>
     </div>
 </body>
 </html>
